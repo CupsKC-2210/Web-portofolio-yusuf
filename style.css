@@ -363,17 +363,25 @@ body {
 
 .marquee-track {
     display: flex;
+    width: max-content;
     white-space: nowrap;
     animation: marquee 25s linear infinite;
 }
 
+.marquee-group {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.marquee-group span,
 .marquee-track span {
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--orange-primary);
     opacity: 0.5;
     letter-spacing: 0.05em;
-    padding-right: 20px;
+    padding: 0 40px;
 }
 
 @keyframes marquee {
