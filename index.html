@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Yusuf Maulana Putra — Portfolio</title>
+    <title>Muhammad Yusuf Maulana Putra — Game &amp; Web Developer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,413 +16,402 @@
 
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">
-                Yusuf<span class="text-orange">.</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center gap-1">
+            <div class="d-flex align-items-center gap-3">
+                <a class="navbar-brand-pill" href="#home" aria-label="Beranda">
+                    <span class="brand-dot-ring"></span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center gap-1 ms-lg-3 mt-3 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#hero">Beranda</a>
+                        <a class="nav-link active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#games">Game Dev</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#web">Web Dev</a>
+                        <a class="nav-link" href="#projects">Proyek</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Kontak</a>
                     </li>
-                    <li class="nav-item ms-lg-3">
-                        <a class="btn btn-orange btn-sm px-3" href="#contact">
-                            Available for Work
-                        </a>
-                    </li>
                 </ul>
+
+                <div class="nav-social-group d-flex align-items-center gap-2 mt-3 mt-lg-0">
+                    <a href="mailto:yusufmaulanaputramuhammad@gmail.com" class="nav-social-btn social-dark"
+                        title="Email Yusuf" aria-label="Email Yusuf">
+                        <i class="bi bi-envelope-fill"></i>
+                    </a>
+                    <a href="https://wa.me/6289681556174" target="_blank" rel="noopener noreferrer"
+                        class="nav-social-btn social-teal" title="WhatsApp" aria-label="WhatsApp">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    <a href="https://myusufmp.itch.io/" target="_blank" rel="noopener noreferrer"
+                        class="nav-social-btn social-pink" title="Itch.io" aria-label="Itch.io">
+                        <i class="bi bi-joystick"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <section id="hero" class="hero-section d-flex align-items-center">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8">
-                    <p class="hero-badge" data-aos="fade-up">
-                        <span class="badge-dot"></span> Game Developer &amp; Web Developer
-                    </p>
-                    <h1 class="hero-title" data-aos="fade-up">
-                        Halo, Saya<br>
-                        <span class="text-orange">Muhammad Yusuf</span><br>
-                        <span class="text-orange">Maulana Putra</span>
-                    </h1>
-                    <p class="hero-subtitle" data-aos="fade-up">
-                        Membangun game yang interaktif dan website yang modern.<br>
-                        Berfokus pada keahlian Game Development dan Front-End Web Programming untuk menciptakan
-                        pengalaman pengguna yang mulus dan menyenangkan.<br class="d-none d-md-block">
-                    </p>
-                    <div class="hero-buttons" data-aos="fade-up">
-                        <a href="#games" class="btn btn-orange btn-lg me-3">
-                            <i class="bi bi-collection-play me-2"></i>Lihat Karya
-                        </a>
-                        <a href="#contact" class="btn btn-outline-orange btn-lg">
-                            <i class="bi bi-envelope me-2"></i>Hubungi Saya
-                        </a>
-                    </div>
-                    <div class="hero-stats" data-aos="fade-up">
-                        <div class="stat-item">
-                            <span class="stat-number">5+</span>
-                            <span class="stat-label">Game Projects</span>
-                        </div>
-                        <div class="stat-divider"></div>
-                        <div class="stat-item">
-                            <span class="stat-number">2+</span>
-                            <span class="stat-label">Web Projects</span>
-                        </div>
-                        <div class="stat-divider"></div>
-                        <div class="stat-item">
-                            <span class="stat-number">∞</span>
-                            <span class="stat-label">Passion</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 d-none d-lg-flex justify-content-center">
-                    <div class="hero-graphic">
-                        <div class="floating-shape shape-1"></div>
-                        <div class="floating-shape shape-2"></div>
-                        <div class="floating-shape shape-3"></div>
-                        <div class="hero-icon-box">
-                            <i class="bi bi-controller"></i>
-                        </div>
-                    </div>
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container position-relative">
+            <div class="hero-sticker sticker-green d-none d-lg-inline-flex" data-aos="fade-up">
+                <i class="bi bi-controller"></i> BIKIN GAME &amp; WEB
+            </div>
+            <div class="hero-sticker sticker-yellow d-none d-lg-inline-flex" data-aos="fade-up">
+                <i class="bi bi-lightning-charge-fill"></i> UNITY • FLUTTER • WEB
+            </div>
+
+            <div class="hero-polaroid polaroid-left d-none d-xl-block" data-aos="fade-up">
+                <div class="polaroid-img-wrap">
+                    <img src="Images/foto-yusuf.jpg" alt="Muhammad Yusuf Maulana Putra">
                 </div>
             </div>
-        </div>
-        <div class="marquee-wrapper">
-            <div class="marquee-track">
-                <div class="marquee-group">
-                    <span>Don't Touch My Tree</span>
-                    <span>REACH IT</span>
-                    <span>R.P.M</span>
-                    <span>Bunker Protocol</span>
-                    <span>Breaking Timeline</span>
-                    <span>ShopItem</span>
-                    <span>ShopSphere</span>
+            <div class="hero-polaroid polaroid-right d-none d-xl-block" data-aos="fade-up">
+                <div class="polaroid-icon-wrap">
+                    <i class="bi bi-joystick"></i>
                 </div>
-                <div class="marquee-group">
-                    <span>Don't Touch My Tree</span>
-                    <span>REACH IT</span>
-                    <span>R.P.M</span>
-                    <span>Bunker Protocol</span>
-                    <span>Breaking Timeline</span>
-                    <span>ShopItem</span>
-                    <span>ShopSphere</span>
+            </div>
+
+            <div class="hero-center text-center mx-auto" data-aos="fade-up">
+                <p class="hero-handwritten mb-2">my name is</p>
+
+                <div class="hero-nameplate-wrap mb-3">
+                    <div class="hero-nameplate">
+                        <span>Yusuf</span>
+                    </div>
+                </div>
+
+                <p class="hero-fullname mb-3">Muhammad Yusuf Maulana Putra</p>
+
+                <div class="hero-meta-pills d-flex flex-wrap justify-content-center align-items-center gap-2 mb-4">
+                    <span class="meta-pill pill-yellow">Game &amp; Web Dev</span>
+                    <span class="meta-divider">• OPEN TO MAGANG &amp; KOLABORASI •</span>
+                    <span class="meta-pill pill-green">Sidoarjo, ID</span>
+                </div>
+
+                <h1 class="hero-headline mb-3">
+                    Saya bikin game &amp; aplikasi<br class="d-none d-md-inline"> yang terasa hidup
+                </h1>
+
+                <div class="hero-mini-icon mb-4">
+                    <span>🕹️</span>
+                </div>
+
+                <div class="hero-cta-group d-flex flex-wrap justify-content-center gap-3">
+                    <a href="#contact" class="btn-brutal btn-brutal-dark">
+                        <i class="bi bi-star-fill me-2"></i>HUBUNGI SAYA
+                    </a>
+                    <button type="button" class="btn-brutal btn-brutal-light-yellow" data-bs-toggle="modal"
+                        data-bs-target="#modalCV">
+                        <i class="bi bi-file-earmark-text me-2"></i>LIHAT CV
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="games" class="portfolio-section">
+    <section id="about" class="about-section">
         <div class="container">
-            <div class="section-header text-center" data-aos="fade-up">
-                <p class="section-tag"><span class="tag-number">01</span> / PORTOFOLIO</p>
-                <h2 class="section-title">Game <span class="text-orange">Development</span></h2>
-                <p class="section-desc mx-auto">
-                    Koleksi game yang telah saya kembangkan - mulai dari game jam hingga proyek independen.
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-box-title">ABOUT ME</h2>
+            </div>
+
+            <div class="row align-items-start g-5">
+                <div class="col-lg-5" data-aos="fade-up">
+                    <div class="about-polaroid-stage mx-auto">
+                        <div class="about-polaroid-card">
+                            <span class="tape-strip tape-top-center"></span>
+                            <div class="about-photo-box">
+                                <img src="Images/foto-yusuf.jpg" alt="Foto Muhammad Yusuf Maulana Putra">
+                            </div>
+                            <div class="polaroid-caption-space"></div>
+                            <div class="hello-badge">
+                                <span class="hello-top">HELLO</span>
+                                <span class="hello-sub">my name is</span>
+                                <span class="hello-name">Yusuf</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-card mt-5">
+                        <h3 class="about-subhead mb-3">TECH &amp; TOOLS</h3>
+                        <div class="skill-group mb-3">
+                            <span class="skill-label">Bahasa Pemrograman</span>
+                            <div class="skill-pills">
+                                <span class="skill-pill">HTML</span>
+                                <span class="skill-pill">CSS</span>
+                                <span class="skill-pill">JavaScript</span>
+                                <span class="skill-pill">Dart</span>
+                                <span class="skill-pill">C#</span>
+                            </div>
+                        </div>
+                        <div class="skill-group mb-3">
+                            <span class="skill-label">Framework &amp; Game Engine</span>
+                            <div class="skill-pills">
+                                <span class="skill-pill pill-accent-yellow">Unity</span>
+                                <span class="skill-pill pill-accent-green">Flutter</span>
+                                <span class="skill-pill pill-accent-orange">Laravel</span>
+                                <span class="skill-pill">Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <span class="skill-label">Tools &amp; Desain</span>
+                            <div class="skill-pills">
+                                <span class="skill-pill">Git</span>
+                                <span class="skill-pill">Figma</span>
+                                <span class="skill-pill">Canva</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+                    <div class="about-block mb-4">
+                        <h3 class="about-hello">HALO! 👋</h3>
+                        <p class="about-bio">
+                            Saya mahasiswa <strong>D4 Teknologi Game</strong> di Politeknik Elektronika Negeri Surabaya
+                            (PENS) dengan fokus pada pengembangan aplikasi <strong>web, mobile, dan game</strong>.
+                            Berpengalaman magang sebagai App Developer menggunakan <strong>Flutter</strong> serta aktif
+                            membangun game berbasis <strong>Unity (C#)</strong> dan website responsif menggunakan
+                            <strong>Laravel</strong> maupun <strong>Bootstrap</strong>. Terbiasa bekerja dalam tenggat
+                            waktu ketat melalui berbagai kompetisi game development. ✨
+                        </p>
+                    </div>
+
+                    <div class="about-block mb-4">
+                        <h3 class="about-subhead">PENDIDIKAN</h3>
+                        <ul class="timeline-list">
+                            <li>
+                                <span class="tl-period">2024 — Sekarang</span>
+                                <p class="tl-title">D4 Teknologi Game — Politeknik Elektronika Negeri Surabaya (PENS)</p>
+                            </li>
+                            <li>
+                                <span class="tl-period">2021 — 2024</span>
+                                <p class="tl-title">Rekayasa Perangkat Lunak — SMK Negeri 1 Surabaya</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="about-block mb-4">
+                        <h3 class="about-subhead">PENGALAMAN KERJA</h3>
+                        <ul class="timeline-list">
+                            <li>
+                                <span class="tl-period">November 2022 — Maret 2023</span>
+                                <p class="tl-title">App Developer Intern — CV Egalite Solution</p>
+                                <p class="tl-desc">
+                                    Mengembangkan fitur aplikasi mobile lintas platform menggunakan Flutter &amp; Dart,
+                                    mengintegrasikan antarmuka (UI) responsif, serta melakukan pengujian dan perbaikan
+                                    bug untuk menjaga performa dan stabilitas aplikasi.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="about-block">
+                        <h3 class="about-subhead">PENGALAMAN KOMPETISI</h3>
+                        <ul class="timeline-list">
+                            <li>
+                                <span class="tl-period">Mei — Juli 2026</span>
+                                <p class="tl-title">Spacejam (Mei) • IFEST Game Development (Juni) • Gameseed (Juli)</p>
+                                <p class="tl-desc">Peserta aktif dalam kompetisi pengembangan game tingkat nasional.</p>
+                            </li>
+                            <li>
+                                <span class="tl-period">2024 &amp; 2026</span>
+                                <p class="tl-title">Kompetisi Game Jam Internal Kampus</p>
+                                <p class="tl-desc">Merancang dan merilis prototipe game dalam batas waktu game jam.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-showcase-section">
+        <div class="rainbow-pixel-bar" aria-hidden="true"></div>
+
+        <div class="container py-5">
+            <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+                <div>
+                    <p class="showcase-eyebrow mb-1">01 / PORTOFOLIO PILIHAN</p>
+                    <h2 class="showcase-section-heading mb-0">Proyek Saya</h2>
+                </div>
+                <div class="project-filter-group" role="group" aria-label="Filter kategori proyek">
+                    <button type="button" class="filter-chip active" data-filter="all" aria-pressed="true">Semua (7)</button>
+                    <button type="button" class="filter-chip" data-filter="game" aria-pressed="false">Game Dev (5)</button>
+                    <button type="button" class="filter-chip" data-filter="web" aria-pressed="false">Web Dev (2)</button>
+                </div>
+            </div>
+
+            <div class="project-tabs-bar" id="projectTabsBar" role="tablist" aria-label="Daftar proyek">
+                <button type="button" class="project-tab active" role="tab" aria-selected="true" data-project="0" data-category="game">
+                    <span class="tab-star">★</span> PROJECT 01 <span class="tab-name">Don't Touch My Tree</span>
+                </button>
+                <button type="button" class="project-tab" role="tab" aria-selected="false" data-project="1" data-category="game">
+                    <span class="tab-star">★</span> PROJECT 02 <span class="tab-name">REACH IT</span>
+                </button>
+                <button type="button" class="project-tab" role="tab" aria-selected="false" data-project="2" data-category="game">
+                    <span class="tab-star">★</span> PROJECT 03 <span class="tab-name">R.P.M.</span>
+                </button>
+                <button type="button" class="project-tab" role="tab" aria-selected="false" data-project="3" data-category="game">
+                    <span class="tab-star">★</span> PROJECT 04 <span class="tab-name">Bunker Protocol</span>
+                </button>
+                <button type="button" class="project-tab" role="tab" aria-selected="false" data-project="4" data-category="game">
+                    <span class="tab-star">★</span> PROJECT 05 <span class="tab-name">Breaking Timeline</span>
+                </button>
+                <button type="button" class="project-tab" role="tab" aria-selected="false" data-project="5" data-category="web">
+                    <span class="tab-star">★</span> PROJECT 06 <span class="tab-name">ShopSphere</span>
+                </button>
+                <button type="button" class="project-tab" role="tab" aria-selected="false" data-project="6" data-category="web">
+                    <span class="tab-star">★</span> PROJECT 07 <span class="tab-name">ShopItems</span>
+                </button>
+            </div>
+
+            <div class="showcase-stage mt-4" id="showcaseStage" role="tabpanel">
+                <div class="row align-items-center g-4 g-lg-5">
+                    <div class="col-lg-5">
+                        <div class="showcase-meta mb-3">
+                            <span class="showcase-badge badge-game" id="scBadge">🎮 GAME (ITCH.IO)</span>
+                            <span class="showcase-status" id="scStatus">• Complete</span>
+                        </div>
+                        <h3 class="showcase-title mb-3" id="scTitle">Don't Touch My Tree</h3>
+                        <p class="showcase-desc mb-4" id="scDesc">
+                            Game tower-defense seru di mana misi utamamu adalah melindungi pohon dari ancaman gelombang
+                            musuh menggunakan strategi dan pertahanan terbaik.
+                        </p>
+                        <div class="showcase-tags mb-4" id="scTags">
+                            <span class="sc-tag">Unity</span>
+                            <span class="sc-tag">3D Game</span>
+                            <span class="sc-tag">Tower Defense</span>
+                        </div>
+                        <div class="showcase-actions d-flex flex-wrap align-items-center gap-3">
+                            <button type="button" class="btn-showcase-modal" id="scModalBtn" data-bs-toggle="modal"
+                                data-bs-target="#modalGame1">
+                                VIEW SCREENSHOTS <i class="bi bi-images ms-1"></i>
+                            </button>
+                            <a href="https://mr-mazoken.itch.io/dont-touch-my-tree" target="_blank"
+                                rel="noopener noreferrer" class="showcase-external-link" id="scExternalLink">
+                                VIEW PROJECT <i class="bi bi-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <button type="button" class="showcase-preview-frame" id="scPreviewTrigger"
+                            aria-label="Buka galeri screenshot proyek">
+                            <img src="Images/Don't Touch my tree/don't touch my tree-Gambar-1.png"
+                                alt="Preview Don't Touch My Tree" id="scImage" loading="lazy">
+                            <span class="preview-hover-hint">
+                                <i class="bi bi-arrows-fullscreen me-2"></i>Klik untuk lihat semua screenshot
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-cta-section">
+        <div class="container">
+            <div class="contact-brutal-card mx-auto" data-aos="fade-up">
+                <span class="tape-strip tape-top-left"></span>
+                <span class="tape-strip tape-top-right"></span>
+
+                <p class="contact-handwritten mb-2">let's talk!</p>
+                <h2 class="contact-headline mb-3">Siap buat hal keren bareng? 🚀</h2>
+                <p class="contact-subtext mb-4">
+                    Mau kolaborasi, kesempatan magang, atau diskusi soal game &amp; web? Langsung kontak saya!
                 </p>
-            </div>
 
-            <div class="d-flex justify-content-between align-items-center mb-4" data-aos="fade-up">
-                <div class="filter-tags">
-                    <span class="filter-tag active">Semua Game</span>
-                    <span class="filter-tag">Itch.io</span>
-                </div>
-                <span class="project-counter">05 COMPLETED PROJECTS</span>
-            </div>
-
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                    <div class="portfolio-card" data-bs-toggle="modal" data-bs-target="#modalGame1">
-                        <div class="card-image-wrapper">
-                            <img src="Images/Logo-Game-Don't Touch My Tree.png" alt="Don't Touch My Tree"
-                                class="card-image" loading="lazy">
-                            <div class="card-overlay">
-                                <span class="overlay-icon"><i class="bi bi-eye-fill"></i></span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-meta">
-                                <div class="d-flex align-items-center gap-2">
-                                    <span class="badge-card-type">Game</span>
-                                    <span class="meta-tag">QUEST 01</span>
-                                </div>
-                                <span class="meta-status"><span class="status-dot"></span> COMPLETE</span>
-                            </div>
-                            <h3 class="card-title">Don't Touch My Tree</h3>
-                            <p class="card-desc">Game seru di mana kamu harus melindungi pohonmu dari ancaman yang
-                                datang.</p>
-                            <div class="card-tags">
-                                <span class="tag">Itch.io</span>
-                                <span class="tag">Indie Game</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="contact-pill-row d-flex flex-wrap justify-content-center gap-3 mb-3">
+                    <a href="mailto:yusufmaulanaputramuhammad@gmail.com" class="contact-btn cb-black">
+                        <i class="bi bi-envelope-fill me-2"></i>yusufmaulanaputramuhammad@gmail.com
+                    </a>
+                    <a href="https://wa.me/6289681556174" target="_blank" rel="noopener noreferrer"
+                        class="contact-btn cb-teal">
+                        <i class="bi bi-whatsapp me-2"></i>0896-8155-6174
+                    </a>
+                    <a href="https://myusufmp.itch.io/" target="_blank" rel="noopener noreferrer"
+                        class="contact-btn cb-pink">
+                        <i class="bi bi-joystick me-2"></i>https://myusufmp.itch.io/
+                    </a>
                 </div>
 
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="portfolio-card" data-bs-toggle="modal" data-bs-target="#modalGame2">
-                        <div class="card-image-wrapper">
-                            <img src="Images/Logo-Game-Reach-It.png" alt="REACH IT" class="card-image" loading="lazy">
-                            <div class="card-overlay">
-                                <span class="overlay-icon"><i class="bi bi-eye-fill"></i></span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-meta">
-                                <div class="d-flex align-items-center gap-2">
-                                    <span class="badge-card-type">Game</span>
-                                    <span class="meta-tag">QUEST 02</span>
-                                </div>
-                                <span class="meta-status"><span class="status-dot"></span> COMPLETE</span>
-                            </div>
-                            <h3 class="card-title">REACH IT</h3>
-                            <p class="card-desc">Tantangan untuk mencapai tujuan di setiap level yang penuh rintangan.
-                            </p>
-                            <div class="card-tags">
-                                <span class="tag">Itch.io</span>
-                                <span class="tag">Platformer</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="portfolio-card" data-bs-toggle="modal" data-bs-target="#modalGame3">
-                        <div class="card-image-wrapper">
-                            <img src="Images/Logo-game-rhythms-per-minute.png" alt="R.P.M (Rhythms Per Minute)"
-                                class="card-image" loading="lazy">
-                            <div class="card-overlay">
-                                <span class="overlay-icon"><i class="bi bi-eye-fill"></i></span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-meta">
-                                <div class="d-flex align-items-center gap-2">
-                                    <span class="badge-card-type">Game</span>
-                                    <span class="meta-tag">QUEST 03</span>
-                                </div>
-                                <span class="meta-status"><span class="status-dot"></span> COMPLETE</span>
-                            </div>
-                            <h3 class="card-title">R.P.M (Rhythms Per Minute)</h3>
-                            <p class="card-desc">Game ritme yang menguji ketepatan dan kecepatan kamu mengikuti irama.
-                            </p>
-                            <div class="card-tags">
-                                <span class="tag">Itch.io</span>
-                                <span class="tag">Rhythm Game</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                    <div class="portfolio-card" data-bs-toggle="modal" data-bs-target="#modalGame4">
-                        <div class="card-image-wrapper">
-                            <img src="Images/Logo-game-Bunker-protocol.png" alt="Bunker Protocol" class="card-image"
-                                loading="lazy">
-                            <div class="card-overlay">
-                                <span class="overlay-icon"><i class="bi bi-eye-fill"></i></span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-meta">
-                                <div class="d-flex align-items-center gap-2">
-                                    <span class="badge-card-type">Game</span>
-                                    <span class="meta-tag">QUEST 04</span>
-                                </div>
-                                <span class="meta-status"><span class="status-dot"></span> COMPLETE</span>
-                            </div>
-                            <h3 class="card-title">Bunker Protocol</h3>
-                            <p class="card-desc">Game survival yang penuh ketegangan di dalam bunker misterius.</p>
-                            <div class="card-tags">
-                                <span class="tag">Itch.io</span>
-                                <span class="tag">Survival</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="portfolio-card" data-bs-toggle="modal" data-bs-target="#modalGame5">
-                        <div class="card-image-wrapper">
-                            <img src="Images/Logo-game-Breaking Timeline.png" alt="Breaking Timeline" class="card-image"
-                                loading="lazy">
-                            <div class="card-overlay">
-                                <span class="overlay-icon"><i class="bi bi-eye-fill"></i></span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-meta">
-                                <div class="d-flex align-items-center gap-2">
-                                    <span class="badge-card-type">Game</span>
-                                    <span class="meta-tag">QUEST 05</span>
-                                </div>
-                                <span class="meta-status"><span class="status-dot"></span> COMPLETE</span>
-                            </div>
-                            <h3 class="card-title">Breaking Timeline</h3>
-                            <p class="card-desc">Petualangan menembus batas waktu dengan cerita yang mengagumkan.</p>
-                            <div class="card-tags">
-                                <span class="tag">Itch.io</span>
-                                <span class="tag">Adventure</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="contact-cv-row d-flex flex-wrap justify-content-center gap-3 mt-4">
+                    <button type="button" class="contact-btn cb-yellow" data-bs-toggle="modal"
+                        data-bs-target="#modalCV">
+                        <i class="bi bi-eye-fill me-2"></i>Preview CV
+                    </button>
+                    <a href="CV-Muhammad-Yusuf-Maulana-Putra.pdf" download="CV-Muhammad-Yusuf-Maulana-Putra.pdf"
+                        class="contact-btn cb-black">
+                        <i class="bi bi-download me-2"></i>Download CV
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="web" class="portfolio-section section-alt">
-        <div class="container">
-            <div class="section-header text-center" data-aos="fade-up">
-                <p class="section-tag"><span class="tag-number">02</span> / PORTOFOLIO</p>
-                <h2 class="section-title">Web <span class="text-orange">Development</span></h2>
-                <p class="section-desc mx-auto">
-                    Proyek web yang telah saya rancang — dari mockup hingga implementasi.
+            <footer class="site-footer text-center mt-5">
+                <p class="footer-note mb-1">
+                    Dibuat dengan <span class="text-pink">❤️</span> oleh Muhammad Yusuf Maulana Putra · 2026
                 </p>
-            </div>
-
-            <div class="d-flex justify-content-between align-items-center mb-4" data-aos="fade-up">
-                <div class="filter-tags">
-                    <span class="filter-tag active">Semua Web</span>
-                    <span class="filter-tag">Mockup</span>
-                </div>
-                <span class="project-counter">02 COMPLETED PROJECTS</span>
-            </div>
-
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-5 col-md-6" data-aos="fade-up">
-                    <div class="portfolio-card card-featured" data-bs-toggle="modal" data-bs-target="#modalWeb1">
-                        <div class="card-image-wrapper card-image-wide">
-                            <img src="Images/Mockup-ShopItem.png" alt="ShopItem - E-Commerce Web (Mockup)"
-                                class="card-image" loading="lazy">
-                            <div class="card-overlay">
-                                <span class="overlay-icon"><i class="bi bi-eye-fill"></i></span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-meta">
-                                <div class="d-flex align-items-center gap-2">
-                                    <span class="badge-card-type badge-web-type">Web</span>
-                                    <span class="meta-tag">PROJECT 01</span>
-                                </div>
-                                <span class="meta-status status-mockup"><span class="status-dot dot-yellow"></span>
-                                    MOCKUP</span>
-                            </div>
-                            <h3 class="card-title">ShopItem — E-Commerce Web (Mockup)</h3>
-                            <p class="card-desc">Desain mockup website e-commerce modern dengan skema warna
-                                oranye/kuning hangat yang elegan.</p>
-                            <div class="card-tags">
-                                <span class="tag">UI/UX</span>
-                                <span class="tag">E-Commerce</span>
-                                <span class="tag">Mockup</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="portfolio-card card-featured" data-bs-toggle="modal" data-bs-target="#modalWeb2">
-                        <div class="card-image-wrapper card-image-wide">
-                            <img src="Images/Mockup-ShopSphere.png" alt="ShopSphere - E-Commerce Web (Mockup)"
-                                class="card-image" loading="lazy">
-                            <div class="card-overlay">
-                                <span class="overlay-icon"><i class="bi bi-eye-fill"></i></span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-meta">
-                                <div class="d-flex align-items-center gap-2">
-                                    <span class="badge-card-type badge-web-type">Web</span>
-                                    <span class="meta-tag">PROJECT 02</span>
-                                </div>
-                                <span class="meta-status status-mockup"><span class="status-dot dot-yellow"></span>
-                                    MOCKUP</span>
-                            </div>
-                            <h3 class="card-title">ShopSphere — E-Commerce Web (Mockup)</h3>
-                            <p class="card-desc">Mockup platform e-commerce dengan tampilan bersih dan navigasi yang
-                                intuitif.</p>
-                            <div class="card-tags">
-                                <span class="tag">UI/UX</span>
-                                <span class="tag">E-Commerce</span>
-                                <span class="tag">Mockup</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <p class="footer-address mb-0">
+                    Jl. Cisedani RT 08 RW 02, Sedati, Sidoarjo
+                </p>
+            </footer>
         </div>
     </section>
-
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <p class="section-tag" data-aos="fade-up"><span class="tag-number">03</span> / KONTAK</p>
-                    <h2 class="section-title" data-aos="fade-up">
-                        Tertarik <span class="text-orange">Berkolaborasi?</span>
-                    </h2>
-                    <p class="section-desc mx-auto mb-5" data-aos="fade-up">
-                        Saya selalu terbuka untuk peluang baru, proyek menarik, atau sekadar berbincang tentang game dan
-                        web development. Jangan ragu untuk menghubungi saya!
-                    </p>
-                    <div class="contact-buttons d-flex justify-content-center flex-wrap gap-3" data-aos="fade-up">
-                        <a href="mailto:yusufmaulanaputramuhammad@gmail.com" class="btn btn-orange btn-lg">
-                            <i class="bi bi-envelope-fill me-2"></i>Kirim Email
-                        </a>
-                        <a href="https://myusufmp.itch.io/" target="_blank" rel="noopener noreferrer"
-                            class="btn btn-outline-orange btn-lg">
-                            <i class="bi bi-joystick me-2"></i>Itch.io
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <p class="footer-brand">
-                        Yusuf<span class="text-orange">.</span>
-                    </p>
-                    <p class="footer-copy">&copy; 2026 Muhammad Yusuf Maulana Putra. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <div class="footer-links d-flex justify-content-center justify-content-md-end flex-wrap gap-3">
-                        <a href="#hero">Beranda</a>
-                        <a href="#games">Game Dev</a>
-                        <a href="#web">Web Dev</a>
-                        <a href="#contact">Kontak</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 
     <button type="button" id="backToTop" class="back-to-top" title="Kembali ke atas" aria-label="Kembali ke atas">
         <i class="bi bi-arrow-up"></i>
     </button>
+
+    <div class="modal fade" id="modalCV" tabindex="-1" aria-labelledby="modalCVLabel">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content project-modal">
+                <div class="modal-header">
+                    <div>
+                        <span class="modal-tag">CURRICULUM VITAE</span>
+                        <h4 class="modal-title" id="modalCVLabel">CV — Muhammad Yusuf Maulana Putra</h4>
+                    </div>
+                    <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="cv-preview-frame mb-3">
+                        <iframe src="CV-Muhammad-Yusuf-Maulana-Putra.pdf" title="Preview CV Muhammad Yusuf Maulana Putra"></iframe>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+                        <span class="small text-muted">Jika pratinjau PDF tidak muncul di browser Anda, gunakan tombol di kanan.</span>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="CV-Muhammad-Yusuf-Maulana-Putra.pdf" target="_blank" rel="noopener noreferrer"
+                                class="btn-brutal btn-brutal-light-yellow btn-sm-brutal">
+                                <i class="bi bi-box-arrow-up-right me-2"></i>Buka PDF
+                            </a>
+                            <a href="CV-Muhammad-Yusuf-Maulana-Putra.pdf" download="CV-Muhammad-Yusuf-Maulana-Putra.pdf"
+                                class="btn-brutal btn-brutal-dark btn-sm-brutal">
+                                <i class="bi bi-download me-2"></i>Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="modal fade" id="modalGame1" tabindex="-1" aria-labelledby="modalGame1Label">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content project-modal">
                 <div class="modal-header">
                     <div>
-                        <span class="modal-tag">QUEST 01 / PROJECT FILE</span>
+                        <span class="modal-tag">PROJECT 01 / GAME FILE</span>
                         <h4 class="modal-title" id="modalGame1Label">Don't Touch My Tree</h4>
                     </div>
                     <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
@@ -435,8 +424,7 @@
                             <div class="carousel-slide">
                                 <img src="Images/Don't Touch my tree/don't touch my tree-Gambar-1.png"
                                     alt="Screenshot 1" loading="lazy">
-                                <div class="slide-caption">Gameplay utama — lindungi pohonmu dari gelombang musuh yang
-                                    datang</div>
+                                <div class="slide-caption">Gameplay utama — lindungi pohonmu dari gelombang musuh yang datang</div>
                             </div>
                             <div class="carousel-slide">
                                 <img src="Images/Don't Touch my tree/don't touch my tree-Gambar-2.png"
@@ -463,7 +451,7 @@
                         <span class="tag">Tower Defense</span>
                     </div>
                     <a href="https://mr-mazoken.itch.io/dont-touch-my-tree" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-orange mt-3">
+                        class="btn-brutal btn-brutal-dark mt-3">
                         <i class="bi bi-joystick me-2"></i>Play on Itch.io <i class="bi bi-box-arrow-up-right ms-1"></i>
                     </a>
                 </div>
@@ -476,7 +464,7 @@
             <div class="modal-content project-modal">
                 <div class="modal-header">
                     <div>
-                        <span class="modal-tag">QUEST 02 / PROJECT FILE</span>
+                        <span class="modal-tag">PROJECT 02 / GAME FILE</span>
                         <h4 class="modal-title" id="modalGame2Label">REACH IT</h4>
                     </div>
                     <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
@@ -488,18 +476,15 @@
                         <div class="carousel-track">
                             <div class="carousel-slide">
                                 <img src="Images/Reach It/Reach It-gambar-01.png" alt="Screenshot 1" loading="lazy">
-                                <div class="slide-caption">Tampilan menu utama dengan desain yang playful dan menarik
-                                </div>
+                                <div class="slide-caption">Tampilan menu utama dengan desain yang playful dan menarik</div>
                             </div>
                             <div class="carousel-slide">
                                 <img src="Images/Reach It/Reach It-gambar-02.png" alt="Screenshot 2" loading="lazy">
-                                <div class="slide-caption">Tantangan platform — lompat dan hindari rintangan untuk
-                                    meraih tujuan</div>
+                                <div class="slide-caption">Tantangan platform — lompat dan hindari rintangan untuk meraih tujuan</div>
                             </div>
                             <div class="carousel-slide">
                                 <img src="Images/Reach It/Reach It-gambar-03.png" alt="Screenshot 3" loading="lazy">
-                                <div class="slide-caption">Level yang dirancang dengan puzzle dan timing yang presisi
-                                </div>
+                                <div class="slide-caption">Level yang dirancang dengan puzzle dan timing yang presisi</div>
                             </div>
                         </div>
                         <button type="button" class="carousel-btn carousel-prev" aria-label="Previous"><i
@@ -508,15 +493,15 @@
                                 class="bi bi-chevron-right"></i></button>
                         <div class="carousel-dots"></div>
                     </div>
-                    <p class="modal-desc">Game platformer yang menantang di mana kamu harus mencapai tujuan di setiap
-                        level. Setiap level dirancang dengan rintangan unik yang menguji refleks dan strategi.</p>
+                    <p class="modal-desc">Game platformer 3D dengan mekanik puzzle dan rintangan presisi di mana kamu
+                        harus mencapai tujuan di setiap level. Setiap level dirancang untuk menguji refleks dan strategi.</p>
                     <div class="modal-tags">
                         <span class="tag">Unity</span>
                         <span class="tag">Platformer</span>
                         <span class="tag">3D Game</span>
                     </div>
                     <a href="https://mr-mazoken.itch.io/reach-it" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-orange mt-3">
+                        class="btn-brutal btn-brutal-dark mt-3">
                         <i class="bi bi-joystick me-2"></i>Play on Itch.io <i class="bi bi-box-arrow-up-right ms-1"></i>
                     </a>
                 </div>
@@ -529,8 +514,8 @@
             <div class="modal-content project-modal">
                 <div class="modal-header">
                     <div>
-                        <span class="modal-tag">QUEST 03 / PROJECT FILE</span>
-                        <h4 class="modal-title" id="modalGame3Label">R.P.M (Rhythms Per Minute)</h4>
+                        <span class="modal-tag">PROJECT 03 / GAME FILE</span>
+                        <h4 class="modal-title" id="modalGame3Label">R.P.M. (Rhythms Per Minute)</h4>
                     </div>
                     <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
                         <i class="bi bi-x-lg"></i>
@@ -542,14 +527,12 @@
                             <div class="carousel-slide">
                                 <img src="Images/rhythms per minute/rhythms per minute-gambar-01.png" alt="Screenshot 1"
                                     loading="lazy">
-                                <div class="slide-caption">Interface utama dengan visual yang dinamis mengikuti beat
-                                    musik</div>
+                                <div class="slide-caption">Interface utama dengan visual yang dinamis mengikuti beat musik</div>
                             </div>
                             <div class="carousel-slide">
                                 <img src="Images/rhythms per minute/rhythms per minute-gambar-02.png" alt="Screenshot 2"
                                     loading="lazy">
-                                <div class="slide-caption">Gameplay ritme — tekan di saat yang tepat untuk skor maksimal
-                                </div>
+                                <div class="slide-caption">Gameplay ritme — tekan di saat yang tepat untuk skor maksimal</div>
                             </div>
                             <div class="carousel-slide">
                                 <img src="Images/rhythms per minute/rhythms per minute-gambar-03.png" alt="Screenshot 3"
@@ -568,8 +551,8 @@
                                 class="bi bi-chevron-right"></i></button>
                         <div class="carousel-dots"></div>
                     </div>
-                    <p class="modal-desc">Game ritme yang menguji ketepatan dan kecepatan kamu mengikuti irama musik.
-                        Kombinasikan timing sempurna dengan refleks cepat untuk meraih skor tertinggi!</p>
+                    <p class="modal-desc">Game ritme 3D berbasis ketepatan musik dengan sistem scoring dan combo yang
+                        menguji kecepatan dan refleks mengikuti irama musik.</p>
                     <div class="modal-tags">
                         <span class="tag">Unity</span>
                         <span class="tag">Rhythm Game</span>
@@ -577,7 +560,7 @@
                         <span class="tag">3D Game</span>
                     </div>
                     <a href="https://elcodante.itch.io/rpm-rhythms-per-minute" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-orange mt-3">
+                        class="btn-brutal btn-brutal-dark mt-3">
                         <i class="bi bi-joystick me-2"></i>Play on Itch.io <i class="bi bi-box-arrow-up-right ms-1"></i>
                     </a>
                 </div>
@@ -590,7 +573,7 @@
             <div class="modal-content project-modal">
                 <div class="modal-header">
                     <div>
-                        <span class="modal-tag">QUEST 04 / PROJECT FILE</span>
+                        <span class="modal-tag">PROJECT 04 / GAME FILE</span>
                         <h4 class="modal-title" id="modalGame4Label">Bunker Protocol</h4>
                     </div>
                     <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
@@ -603,14 +586,12 @@
                             <div class="carousel-slide">
                                 <img src="Images/Bunker Protocol/Bunker Protocol-gambar-01.png" alt="Screenshot 1"
                                     loading="lazy">
-                                <div class="slide-caption">Suasana bunker yang misterius dengan pencahayaan dramatis
-                                </div>
+                                <div class="slide-caption">Suasana bunker yang misterius dengan pencahayaan dramatis</div>
                             </div>
                             <div class="carousel-slide">
                                 <img src="Images/Bunker Protocol/Bunker Protocol-gambar-02.png" alt="Screenshot 2"
                                     loading="lazy">
-                                <div class="slide-caption">Mekanisme survival — kelola sumber daya untuk bertahan hidup
-                                </div>
+                                <div class="slide-caption">Mekanisme survival — kelola sumber daya untuk bertahan hidup</div>
                             </div>
                             <div class="carousel-slide">
                                 <img src="Images/Bunker Protocol/Bunker Protocol-gambar-03.png" alt="Screenshot 3"
@@ -653,7 +634,7 @@
                         <span class="tag">Puzzle</span>
                     </div>
                     <a href="https://billz89.itch.io/bunker-protocol" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-orange mt-3">
+                        class="btn-brutal btn-brutal-dark mt-3">
                         <i class="bi bi-joystick me-2"></i>Play on Itch.io <i class="bi bi-box-arrow-up-right ms-1"></i>
                     </a>
                 </div>
@@ -666,7 +647,7 @@
             <div class="modal-content project-modal">
                 <div class="modal-header">
                     <div>
-                        <span class="modal-tag">QUEST 05 / PROJECT FILE</span>
+                        <span class="modal-tag">PROJECT 05 / GAME FILE</span>
                         <h4 class="modal-title" id="modalGame5Label">Breaking Timeline</h4>
                     </div>
                     <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
@@ -679,8 +660,7 @@
                             <div class="carousel-slide">
                                 <img src="Images/Breaking Timeline/Breaking Timeline-gambar-01.png" alt="Screenshot 1"
                                     loading="lazy">
-                                <div class="slide-caption">Dunia cerita yang luas dengan timeline yang bisa dimanipulasi
-                                </div>
+                                <div class="slide-caption">Dunia cerita yang luas dengan timeline yang bisa dimanipulasi</div>
                             </div>
                             <div class="carousel-slide">
                                 <img src="Images/Breaking Timeline/Breaking Timeline-gambar-02.png" alt="Screenshot 2"
@@ -705,8 +685,7 @@
                             <div class="carousel-slide">
                                 <img src="Images/Breaking Timeline/Breaking Timeline-gambar-06.png" alt="Screenshot 6"
                                     loading="lazy">
-                                <div class="slide-caption">Klimaks cerita dengan pilihan yang mengubah akhir permainan
-                                </div>
+                                <div class="slide-caption">Klimaks cerita dengan pilihan yang mengubah akhir permainan</div>
                             </div>
                         </div>
                         <button type="button" class="carousel-btn carousel-prev" aria-label="Previous"><i
@@ -715,73 +694,17 @@
                                 class="bi bi-chevron-right"></i></button>
                         <div class="carousel-dots"></div>
                     </div>
-                    <p class="modal-desc">Petualangan seru menembus batas waktu! Manipulasi timeline, selesaikan puzzle
-                        berbasis waktu, dan ungkap misteri di balik garis waktu yang rusak.</p>
+                    <p class="modal-desc">Game petualangan puzzle 2D dengan mekanik manipulasi waktu (time-travel).
+                        Manipulasi timeline, selesaikan puzzle berbasis waktu, dan ungkap misteri garis waktu yang rusak.</p>
                     <div class="modal-tags">
                         <span class="tag">Unity</span>
-                        <span class="tag">Adventure</span>
+                        <span class="tag">2D Game</span>
                         <span class="tag">Puzzle</span>
                         <span class="tag">Time-Travel</span>
                     </div>
                     <a href="https://mr-mazoken.itch.io/breaking-timeline" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-orange mt-3">
+                        class="btn-brutal btn-brutal-dark mt-3">
                         <i class="bi bi-joystick me-2"></i>Play on Itch.io <i class="bi bi-box-arrow-up-right ms-1"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modalWeb1" tabindex="-1" aria-labelledby="modalWeb1Label">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content project-modal">
-                <div class="modal-header">
-                    <div>
-                        <span class="modal-tag">PROJECT 01 / WEB FILE</span>
-                        <h4 class="modal-title" id="modalWeb1Label">ShopItem — E-Commerce Web</h4>
-                    </div>
-                    <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
-                        <i class="bi bi-x-lg"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="project-carousel" id="carousel-web1">
-                        <div class="carousel-track">
-                            <div class="carousel-slide">
-                                <img src="Images/ShopItem/Shop Item-gambar-01.png" alt="ShopItem Screenshot 1"
-                                    loading="lazy">
-                                <div class="slide-caption">Halaman utama dengan banner promo dan navigasi yang intuitif
-                                </div>
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="Images/ShopItem/Shop Item-gambar-02.png" alt="ShopItem Screenshot 2"
-                                    loading="lazy">
-                                <div class="slide-caption">Tampilan katalog produk dengan filter dan kategori lengkap
-                                </div>
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="Images/ShopItem/Shop Item-gambar-03.png" alt="ShopItem Screenshot 3"
-                                    loading="lazy">
-                                <div class="slide-caption">Detail produk dengan galeri gambar dan informasi harga</div>
-                            </div>
-                        </div>
-                        <button type="button" class="carousel-btn carousel-prev" aria-label="Previous"><i
-                                class="bi bi-chevron-left"></i></button>
-                        <button type="button" class="carousel-btn carousel-next" aria-label="Next"><i
-                                class="bi bi-chevron-right"></i></button>
-                        <div class="carousel-dots"></div>
-                    </div>
-                    <p class="modal-desc">Mockup website e-commerce dengan desain modern, skema warna oranye/kuning
-                        hangat, banner promosi interaktif, dan pengalaman belanja yang nyaman untuk pengguna.</p>
-                    <div class="modal-tags">
-                        <span class="tag">HTML5</span>
-                        <span class="tag">CSS3</span>
-                        <span class="tag">Bootstrap</span>
-                        <span class="tag">E-Commerce</span>
-                    </div>
-                    <a href="Images/Mockup-ShopItem.png" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-orange mt-2">
-                        <i class="bi bi-eye me-2"></i>Lihat Mockup Penuh <i class="bi bi-box-arrow-up-right ms-1"></i>
                     </a>
                 </div>
             </div>
@@ -793,7 +716,7 @@
             <div class="modal-content project-modal">
                 <div class="modal-header">
                     <div>
-                        <span class="modal-tag">PROJECT 02 / WEB FILE</span>
+                        <span class="modal-tag">PROJECT 06 / WEB FILE</span>
                         <h4 class="modal-title" id="modalWeb2Label">ShopSphere — E-Commerce Web</h4>
                     </div>
                     <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
@@ -811,14 +734,12 @@
                             <div class="carousel-slide">
                                 <img src="Images/Shop Sphere/Shop Sphere-gambar-02.png" alt="ShopSphere Screenshot 2"
                                     loading="lazy">
-                                <div class="slide-caption">Halaman produk dengan layout grid yang rapi dan responsif
-                                </div>
+                                <div class="slide-caption">Halaman produk dengan layout grid yang rapi dan responsif</div>
                             </div>
                             <div class="carousel-slide">
                                 <img src="Images/Shop Sphere/Shop Sphere-gambar-03.png" alt="ShopSphere Screenshot 3"
                                     loading="lazy">
-                                <div class="slide-caption">Sistem checkout dan keranjang belanja yang user-friendly
-                                </div>
+                                <div class="slide-caption">Sistem checkout dan keranjang belanja yang user-friendly</div>
                             </div>
                         </div>
                         <button type="button" class="carousel-btn carousel-prev" aria-label="Previous"><i
@@ -827,8 +748,8 @@
                                 class="bi bi-chevron-right"></i></button>
                         <div class="carousel-dots"></div>
                     </div>
-                    <p class="modal-desc">Platform e-commerce dengan tampilan bersih, navigasi intuitif, dan desain yang
-                        mengutamakan kenyamanan pengguna dalam berbelanja online.</p>
+                    <p class="modal-desc">Platform e-commerce dan dashboard admin berbasis web yang responsif
+                        menggunakan HTML, CSS, dan Bootstrap dengan navigasi intuitif.</p>
                     <div class="modal-tags">
                         <span class="tag">HTML5</span>
                         <span class="tag">CSS3</span>
@@ -836,7 +757,61 @@
                         <span class="tag">E-Commerce</span>
                     </div>
                     <a href="Images/Mockup-ShopSphere.png" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-orange mt-2">
+                        class="btn-brutal btn-brutal-dark mt-2">
+                        <i class="bi bi-eye me-2"></i>Lihat Mockup Penuh <i class="bi bi-box-arrow-up-right ms-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalWeb1" tabindex="-1" aria-labelledby="modalWeb1Label">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content project-modal">
+                <div class="modal-header">
+                    <div>
+                        <span class="modal-tag">PROJECT 07 / WEB FILE</span>
+                        <h4 class="modal-title" id="modalWeb1Label">ShopItems — E-Commerce Web</h4>
+                    </div>
+                    <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="project-carousel" id="carousel-web1">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="Images/ShopItem/Shop Item-gambar-01.png" alt="ShopItem Screenshot 1"
+                                    loading="lazy">
+                                <div class="slide-caption">Halaman utama dengan banner promo dan navigasi yang intuitif</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="Images/ShopItem/Shop Item-gambar-02.png" alt="ShopItem Screenshot 2"
+                                    loading="lazy">
+                                <div class="slide-caption">Tampilan katalog produk dengan filter dan kategori lengkap</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="Images/ShopItem/Shop Item-gambar-03.png" alt="ShopItem Screenshot 3"
+                                    loading="lazy">
+                                <div class="slide-caption">Detail produk dengan galeri gambar dan informasi harga</div>
+                            </div>
+                        </div>
+                        <button type="button" class="carousel-btn carousel-prev" aria-label="Previous"><i
+                                class="bi bi-chevron-left"></i></button>
+                        <button type="button" class="carousel-btn carousel-next" aria-label="Next"><i
+                                class="bi bi-chevron-right"></i></button>
+                        <div class="carousel-dots"></div>
+                    </div>
+                    <p class="modal-desc">Antarmuka website katalog belanja online dengan fitur kategori produk, promo
+                        interaktif, serta skema warna oranye/kuning hangat yang elegan.</p>
+                    <div class="modal-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">E-Commerce</span>
+                    </div>
+                    <a href="Images/Mockup-ShopItem.png" target="_blank" rel="noopener noreferrer"
+                        class="btn-brutal btn-brutal-dark mt-2">
                         <i class="bi bi-eye me-2"></i>Lihat Mockup Penuh <i class="bi bi-box-arrow-up-right ms-1"></i>
                     </a>
                 </div>
@@ -847,6 +822,189 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
+        const PROJECTS_DATA = [
+            {
+                id: 0,
+                category: 'game',
+                badgeText: '🎮 GAME (ITCH.IO)',
+                badgeClass: 'badge-game',
+                status: '• Tower Defense',
+                title: "Don't Touch My Tree",
+                desc: 'Game tower-defense seru di mana misi utamamu adalah melindungi pohon dari ancaman gelombang musuh menggunakan strategi dan pertahanan terbaik.',
+                tags: ['Unity', 'C#', '3D Game', 'Tower Defense'],
+                image: "Images/Don't Touch my tree/don't touch my tree-Gambar-1.png",
+                modalTarget: '#modalGame1',
+                externalUrl: 'https://mr-mazoken.itch.io/dont-touch-my-tree',
+                externalLabel: 'VIEW PROJECT'
+            },
+            {
+                id: 1,
+                category: 'game',
+                badgeText: '🎮 GAME (ITCH.IO)',
+                badgeClass: 'badge-game',
+                status: '• 3D Platformer',
+                title: 'REACH IT',
+                desc: 'Membangun game platformer 3D dengan mekanik puzzle dan rintangan presisi yang menguji refleks serta timing pemain di setiap level.',
+                tags: ['Unity', 'C#', '3D Game', 'Platformer'],
+                image: 'Images/Reach It/Reach It-gambar-02.png',
+                modalTarget: '#modalGame2',
+                externalUrl: 'https://mr-mazoken.itch.io/reach-it',
+                externalLabel: 'VIEW PROJECT'
+            },
+            {
+                id: 2,
+                category: 'game',
+                badgeText: '🎮 GAME (ITCH.IO)',
+                badgeClass: 'badge-game',
+                status: '• Rhythm Game',
+                title: 'R.P.M. (Rhythms Per Minute)',
+                desc: 'Mengembangkan game ritme 3D berbasis ketepatan musik dengan sistem scoring dan combo chain untuk menguji kecepatan dan akurasi irama.',
+                tags: ['Unity', 'C#', '3D Game', 'Rhythm'],
+                image: 'Images/rhythms per minute/rhythms per minute-gambar-02.png',
+                modalTarget: '#modalGame3',
+                externalUrl: 'https://elcodante.itch.io/rpm-rhythms-per-minute',
+                externalLabel: 'VIEW PROJECT'
+            },
+            {
+                id: 3,
+                category: 'game',
+                badgeText: '🎮 GAME (ITCH.IO)',
+                badgeClass: 'badge-game',
+                status: '• Survival Horror',
+                title: 'Bunker Protocol',
+                desc: 'Game survival horror berlatar di dalam bunker misterius. Kelola sumber daya, pecahkan protokol keamanan, dan temukan jalan keluar.',
+                tags: ['Unity', 'C#', 'Survival', 'Puzzle'],
+                image: 'Images/Bunker Protocol/Bunker Protocol-gambar-01.png',
+                modalTarget: '#modalGame4',
+                externalUrl: 'https://billz89.itch.io/bunker-protocol',
+                externalLabel: 'VIEW PROJECT'
+            },
+            {
+                id: 4,
+                category: 'game',
+                badgeText: '🎮 GAME (ITCH.IO)',
+                badgeClass: 'badge-game',
+                status: '• 2D Adventure Puzzle',
+                title: 'Breaking Timeline',
+                desc: 'Mengembangkan game petualangan puzzle 2D dengan mekanik manipulasi waktu (time-travel) dan alur cerita bercabang.',
+                tags: ['Unity', 'C#', '2D Game', 'Time-Travel'],
+                image: 'Images/Breaking Timeline/Breaking Timeline-gambar-01.png',
+                modalTarget: '#modalGame5',
+                externalUrl: 'https://mr-mazoken.itch.io/breaking-timeline',
+                externalLabel: 'VIEW PROJECT'
+            },
+            {
+                id: 5,
+                category: 'web',
+                badgeText: '🌐 WEB (MOCKUP)',
+                badgeClass: 'badge-web',
+                status: '• E-Commerce & Admin',
+                title: 'ShopSphere — E-Commerce Web',
+                desc: 'Membangun platform e-commerce dan dashboard admin berbasis web yang responsif dengan navigasi bersih menggunakan HTML, CSS, dan Bootstrap.',
+                tags: ['HTML5', 'CSS3', 'Bootstrap', 'UI/UX'],
+                image: 'Images/Shop Sphere/Shop Sphere-gambar-01.png',
+                modalTarget: '#modalWeb2',
+                externalUrl: 'Images/Mockup-ShopSphere.png',
+                externalLabel: 'VIEW MOCKUP'
+            },
+            {
+                id: 6,
+                category: 'web',
+                badgeText: '🌐 WEB (MOCKUP)',
+                badgeClass: 'badge-web',
+                status: '• Katalog Belanja Online',
+                title: 'ShopItems — E-Commerce Web',
+                desc: 'Merancang antarmuka website katalog belanja online dengan fitur kategori produk, banner promo interaktif, dan layout responsif.',
+                tags: ['HTML5', 'CSS3', 'Bootstrap', 'E-Commerce'],
+                image: 'Images/ShopItem/Shop Item-gambar-01.png',
+                modalTarget: '#modalWeb1',
+                externalUrl: 'Images/Mockup-ShopItem.png',
+                externalLabel: 'VIEW MOCKUP'
+            }
+        ];
+
+        const projectTabs = document.querySelectorAll('.project-tab');
+        const filterChips = document.querySelectorAll('.filter-chip');
+        const showcaseStage = document.getElementById('showcaseStage');
+        const scBadge = document.getElementById('scBadge');
+        const scStatus = document.getElementById('scStatus');
+        const scTitle = document.getElementById('scTitle');
+        const scDesc = document.getElementById('scDesc');
+        const scTags = document.getElementById('scTags');
+        const scImage = document.getElementById('scImage');
+        const scModalBtn = document.getElementById('scModalBtn');
+        const scExternalLink = document.getElementById('scExternalLink');
+        const scPreviewTrigger = document.getElementById('scPreviewTrigger');
+
+        let currentModalTarget = '#modalGame1';
+
+        function renderProject(index) {
+            const p = PROJECTS_DATA[index];
+            if (!p) return;
+
+            projectTabs.forEach(tab => {
+                const isActive = Number(tab.dataset.project) === index;
+                tab.classList.toggle('active', isActive);
+                tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            });
+
+            showcaseStage.classList.add('switching');
+            setTimeout(() => {
+                scBadge.textContent = p.badgeText;
+                scBadge.className = `showcase-badge ${p.badgeClass}`;
+                scStatus.textContent = p.status;
+                scTitle.textContent = p.title;
+                scDesc.textContent = p.desc;
+                scTags.innerHTML = p.tags.map(t => `<span class="sc-tag">${t}</span>`).join('');
+                scImage.src = p.image;
+                scImage.alt = `Preview ${p.title}`;
+                currentModalTarget = p.modalTarget;
+                scModalBtn.setAttribute('data-bs-target', p.modalTarget);
+                scExternalLink.href = p.externalUrl;
+                scExternalLink.innerHTML = `${p.externalLabel} <i class="bi bi-arrow-right ms-1"></i>`;
+
+                showcaseStage.classList.remove('switching');
+            }, 130);
+        }
+
+        projectTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                renderProject(Number(tab.dataset.project));
+            });
+        });
+
+        filterChips.forEach(chip => {
+            chip.addEventListener('click', () => {
+                const filter = chip.dataset.filter;
+                filterChips.forEach(c => {
+                    const isActive = c === chip;
+                    c.classList.toggle('active', isActive);
+                    c.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+                });
+
+                let firstVisibleIndex = null;
+                projectTabs.forEach(tab => {
+                    const match = filter === 'all' || tab.dataset.category === filter;
+                    tab.style.display = match ? 'inline-flex' : 'none';
+                    if (match && firstVisibleIndex === null) {
+                        firstVisibleIndex = Number(tab.dataset.project);
+                    }
+                });
+
+                const activeTab = document.querySelector('.project-tab.active');
+                if (activeTab && activeTab.style.display === 'none' && firstVisibleIndex !== null) {
+                    renderProject(firstVisibleIndex);
+                }
+            });
+        });
+
+        scPreviewTrigger.addEventListener('click', () => {
+            const modalEl = document.querySelector(currentModalTarget);
+            if (modalEl) {
+                bootstrap.Modal.getOrCreateInstance(modalEl).show();
+            }
+        });
+
         const navbar = document.getElementById('mainNavbar');
         const navLinks = document.querySelectorAll('.nav-link');
         const sections = document.querySelectorAll('section[id]');
@@ -854,7 +1012,7 @@
         let clickTimeout = null;
 
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
+            if (window.scrollY > 30) {
                 navbar.classList.add('navbar-scrolled');
             } else {
                 navbar.classList.remove('navbar-scrolled');
@@ -870,7 +1028,7 @@
                 current = 'contact';
             } else {
                 sections.forEach(section => {
-                    const sectionTop = section.offsetTop - 120;
+                    const sectionTop = section.offsetTop - 130;
                     if (scrollPos >= sectionTop) {
                         current = section.getAttribute('id');
                     }
@@ -925,7 +1083,7 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
-        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -40px 0px' };
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -1056,15 +1214,6 @@
                 activeModalCarousel.next();
             }
         });
-
-        const heroSubtitle = document.querySelector('.hero-badge');
-        if (heroSubtitle) {
-            heroSubtitle.style.opacity = '0';
-            setTimeout(() => {
-                heroSubtitle.style.opacity = '1';
-                heroSubtitle.style.transition = 'opacity 0.8s ease';
-            }, 300);
-        }
     </script>
 </body>
 
